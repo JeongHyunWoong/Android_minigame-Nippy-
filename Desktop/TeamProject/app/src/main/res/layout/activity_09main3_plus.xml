@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#f2e03f"
+        android:padding="10dp"
+        android:text="20s"
+        android:textSize="30sp"
+        android:fontFamily="@font/a"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/expression_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="0+0"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#f2e03f"
+        android:padding="10dp"
+        android:text="0/0"
+        android:textSize="30sp"
+        android:fontFamily="@font/a"
+        android:visibility="visible" />
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timer_text_view"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/zeroth_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#30b0ea"
+            android:onClick="optionClicked"
+            android:tag="0"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/first_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+
+            android:background="#79d60e"
+            android:onClick="optionClicked"
+            android:tag="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/second_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#e62767"
+            android:onClick="optionClicked"
+            android:tag="2"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/third_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#c028da"
+            android:onClick="optionClicked"
+            android:tag="3"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="70sp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text=""
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/play_again_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_text_view"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lightRed"
+        android:fontFamily="@font/a"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/solution"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="153dp"
+        app:srcCompat="@drawable/answer" />
+
+    <TextView
+        android:id="@+id/go_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#E80505"
+        android:fontFamily="@font/a"
+        android:gravity="center"
+        android:onClick="goClicked"
+        android:text="Hard"
+        android:textColor="@color/white"
+        android:textSize="100sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

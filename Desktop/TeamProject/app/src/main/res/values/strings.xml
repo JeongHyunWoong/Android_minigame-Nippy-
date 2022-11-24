@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Nippy</string>
+    <string name="simonTitle">Simon Tap</string>
+    <string name="startButton">Start Game</string>
+    <string name="score">Scores</string>
+    <string name="play">Play Game</string>
+    <string name="default_score">0</string>
+    <string name="dialog_btn_go_home">Go Home</string>
+    <string name="dialog_btn_replay">Replay</string>
+    <string name="msg_winner">You won!\nYour scores : %d</string>
+    <string name="ok">다시하기</string>
+    <string name="antall_flytt">Antall flytt:</string>
+    <string name="sekunder">Sekunder:</string>
+    <string name="start_button">Start</string>
+    <string name="bottom_margin">237dp</string>
+    <string name="vinner">kyDu vant spillet!🍗</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="time">Time:</string>
+    <string name="moves">Moves:</string>
+</resources>

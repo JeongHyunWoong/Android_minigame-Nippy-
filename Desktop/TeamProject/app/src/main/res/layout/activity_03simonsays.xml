@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginLeft="236dp"
+        android:layout_marginTop="156dp"
+        android:background="@android:color/holo_red_dark"
+        android:rotation="45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSimonTitle" />
+
+    <Button
+        android:id="@+id/buttonYellow"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="344dp"
+        android:background="@android:color/holo_orange_dark"
+        android:rotation="45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSimonTitle" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="156dp"
+        android:background="@android:color/holo_green_dark"
+        android:rotation="45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSimonTitle" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginLeft="236dp"
+        android:layout_marginTop="344dp"
+        android:background="@android:color/holo_blue_dark"
+        android:rotation="45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSimonTitle" />
+
+    <Button
+        android:id="@+id/buttonSimonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/black"
+        android:fontFamily="@font/a"
+        android:text="@string/startButton"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSimonTitle" />
+
+    <TextView
+        android:id="@+id/textViewSimonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/a"
+        android:text="@string/simonTitle"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSimonStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
