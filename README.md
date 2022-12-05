@@ -1,4 +1,4 @@
-# Android_minigame-Nippy-
+# Android_minigame-Nippy
 ## Intro
 ![main](https://user-images.githubusercontent.com/114462583/205562671-62205428-2dfc-4c0f-a629-2a387613b0a1.jpg)
 ## Main
